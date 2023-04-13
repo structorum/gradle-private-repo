@@ -1,3 +1,5 @@
+//import io.github.structorum.gradle.mavenRepo
+
 /*
  * Copyright 2023 Structorum
  *
@@ -17,17 +19,19 @@
 plugins {
     `kotlin-dsl`
     `maven-publish`
-    id("com.gradle.plugin-publish") version "1.2.0"
+//    id("com.gradle.plugin-publish") version "1.2.0"
+//    id("io.github.structorum.gradle.private-repo") version "1.0"
 }
 
 allprojects {
     group = "io.github.structorum.gradle"
-    version = "1.0"
+    version = "1.1-SNAPSHOT"
 }
 
 publishing {
     repositories {
         mavenLocal()
+//        mavenRepo()
     }
 }
 
